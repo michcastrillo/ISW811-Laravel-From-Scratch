@@ -64,6 +64,7 @@ No solo podemos acceder a las vistas por medio de la URL sino también por medio
 ```php
 <h1><a href="/post">My first blog</a></h1>
 ``` 
+
     * Vista principal posts
 ![image](./images/posts%20page%20ep7.png "posts page")
     * Vista de un articulo post
@@ -76,6 +77,7 @@ En este capitulo se realizara el blog dinámico, para esto pondremos un redirecc
 ``` 
 Además se agregara una carpeta posts la cual tendrá tres archivos, estos tendrán cada  contenido post por aparte. 
 ![image](./images/carpeta%20posts.png "carpeta posts")
+\
 Para el direccionamiento en las rutas siempre se tendrá un pagina principal posts, y luego un endpoint que pueda recibir cualquier ruta además de la principal: 'posts/{post}'. Se redirecciona a la carpeta donde están los post de manera individual. Ponemos una condición por si se coloca una URL que no tengamos, y se redirecciona a la pagina principal para evitar errores, al final se obtiene cada contenido de los post. 
 ```php
 Route::get('/posts', function () {
@@ -98,4 +100,12 @@ Route::get('posts/{post}', function ($slug) {
 Cambiamos cada link por cada titulo en el cual almacenamos los post: 
 ```php
  <h1><a href="/posts/my-third-post">My third post</a></h1>
+``` 
+## Módulo 2 - Episodio 9 - Route Wildcard Constraints
+La siguiente linea nos asegura que al ingresar nuestra URL puede estar en mayúscula, miniscule, o cualquier caracter. 
+```php
+
+Route::get('posts/{post}', function ($slug) {
+    
+})->Where('post', '[A-z_\-]+');
 ``` 

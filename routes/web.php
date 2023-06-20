@@ -36,7 +36,7 @@ Route::get('posts/{post}', function ($slug) {
     return view('post', [
         'post' => $post
     ]);
-});
+})->Where('post', '[A-z_\-]+');
 
 
 //Episodio 7
