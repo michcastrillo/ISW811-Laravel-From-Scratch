@@ -38,8 +38,30 @@ body{
 }
 ```
 ![image](./images/hello%20world.png "css added")
- ```js
+
+Se creó un archivo app.js en la carpeta public para darle una pequeña funcionalidad a la página, en este caso una ventana emergente.  
+```js
 alert('Im here');
 ```
-Se creó un archivo app.js en la carpeta public para darle una pequeña funcionalidad a la página, en este caso una ventana emergente. 
 ![image](./images/alert.png "js added")
+## Módulo 2 - Episodio 7 - Make a Route and Link to it
+En este episodio se muestra como enlazar una vista a otra por medio de un link. Para esto creamos dos vistas: 
+![image](./images/creaci%C3%B3n%20de%20vista%20post.png "post file")
+Y sus respectivas rutas: 
+ ```php
+Route::get('/posts', function () {
+    return view('posts');
+
+});
+
+Route::get('/post', function () {
+    return view('post'); 
+});
+``` 
+
+Por medio de un link accedemos a la vista post
+```php
+<h1><a href="/post">My first blog</a></h1>
+``` 
+![image](./images/post%20page%20ep7.png "post page")
+![image](./images/posts%20page%20ep7.png "posts page")

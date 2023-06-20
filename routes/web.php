@@ -20,3 +20,11 @@ Route::get('/example', function () {
     return [['id'=>' 0 ','name' =>'ashley'],['id'=>' 1','name' =>'michelle']]; 
 
 });
+Route::get('/posts', function () {
+    return view('posts');
+
+});
+
+Route::get('/post', function () {
+    return view('post'); 
+});
