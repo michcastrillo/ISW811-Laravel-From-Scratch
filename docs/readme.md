@@ -45,8 +45,9 @@ alert('Im here');
 ```
 ![image](./images/alert.png "js added")
 ## Módulo 2 - Episodio 7 - Make a Route and Link to it
-En este episodio se muestra como enlazar una vista a otra por medio de un link. Para esto creamos dos vistas: 
+En este episodio se muestra como enlazar una vista a otra por medio de un link. Para esto un blog básico no dinámico con dos vistas en las cuales posts contendrá todos los artículos y post solo la información de una articulo: 
 ![image](./images/creaci%C3%B3n%20de%20vista%20post.png "post file")
+\
 Y sus respectivas rutas: 
  ```php
 Route::get('/posts', function () {
@@ -59,9 +60,42 @@ Route::get('/post', function () {
 });
 ``` 
 
-Por medio de un link accedemos a la vista post
+No solo podemos acceder a las vistas por medio de la URL sino también por medio del HTML, en este caso, por medio de un link accedemos a la vista post
 ```php
 <h1><a href="/post">My first blog</a></h1>
 ``` 
-![image](./images/post%20page%20ep7.png "post page")
+    * Vista principal posts
 ![image](./images/posts%20page%20ep7.png "posts page")
+    * Vista de un articulo post
+![image](./images/post%20page%20ep7.png "post page")
+
+## Módulo 2 - Episodio 8 - Store Blog Posts as HTML Files
+En este capitulo se realizara el blog dinámico, para esto pondremos un redireccionamiento a cada contenido post.  
+```php
+<?=$post;?>
+``` 
+Además se agregara una carpeta posts la cual tendrá tres archivos, estos tendrán cada  contenido post por aparte. 
+![image](./images/carpeta%20posts.png "carpeta posts")
+Para el direccionamiento en las rutas siempre se tendrá un pagina principal posts, y luego un endpoint que pueda recibir cualquier ruta además de la principal: 'posts/{post}'. Se redirecciona a la carpeta donde están los post de manera individual. Ponemos una condición por si se coloca una URL que no tengamos, y se redirecciona a la pagina principal para evitar errores, al final se obtiene cada contenido de los post. 
+```php
+Route::get('/posts', function () {
+    return view('posts'); 
+});
+Route::get('posts/{post}', function ($slug) {
+    $path = __DIR__ . "/../resources/posts/{$slug}.html";
+
+    if(! file_exists($path)){
+        return redirect("/posts");
+    }
+
+    $post = file_get_contents($path);
+
+    return view('post', [
+        'post' => $post
+    ]);
+});
+``` 
+Cambiamos cada link por cada titulo en el cual almacenamos los post: 
+```php
+ <h1><a href="/posts/my-third-post">My third post</a></h1>
+``` 
