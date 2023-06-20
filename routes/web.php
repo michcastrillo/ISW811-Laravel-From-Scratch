@@ -1,7 +1,7 @@
 <?php
 use App\Models\Post;
 use Illuminate\Support\Facades\Route;
-
+use Spatie\YamlFrontMatter\YamlFrontMatter;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -21,10 +21,8 @@ Route::get('/', function () {
 
 Route::get('posts/{post}', function ($slug) {
 
-    $post = Post::find($slug);
-
     return view('post', [
-        'post'=> $post
+        'post'=> Post::find($slug)
     ]);
 
 })->Where('post', '[A-z_\-]+');

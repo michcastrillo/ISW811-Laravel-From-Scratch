@@ -3,7 +3,10 @@
 <link rel="stylesheet" href="/app.css">
 <body>
     <article>
-        <?=$post;?>
+        <h1><?= $post->title; ?></h1>
+        <div>
+            <?= $post->excerpt; ?>
+        </div>
     </article>
-    <a href="/posts">Go back</a>
+    <a href="/">Go back</a>
 </body>
