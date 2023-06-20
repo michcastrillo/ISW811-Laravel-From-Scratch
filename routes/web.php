@@ -1,5 +1,5 @@
 <?php
-
+use App\Models\Post;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,27 +14,29 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('posts', [
+        'posts'=> Post::all()
+    ]);
 });
 
-Route::get('/example', function () {
-    return [['id'=>' 0 ','name' =>'ashley'],['id'=>' 1','name' =>'michelle']]; 
-
-});
-Route::get('/posts', function () {
-    return view('posts'); 
-});
 Route::get('posts/{post}', function ($slug) {
 
-    if(! file_exists($path =  __DIR__ . "/../resources/posts/{$slug}.html")){
-        return redirect("/posts");
-    }
+    $post = Post::find($slug);
 
-    $post = cache()->remember("posts.($slug)", 1200, fn() => file_get_contents($path));
+    return view('post', [
+        'post'=> $post
+    ]);
 
-    return view('post', ['post' => $post]);
-    
 })->Where('post', '[A-z_\-]+');
+
+// Route::get('/example', function () {
+//     return [['id'=>' 0 ','name' =>'ashley'],['id'=>' 1','name' =>'michelle']]; 
+
+// });
+// Route::get('/posts', function () {
+//     return view('posts'); 
+// });
+
 
 
 //Episodio 7
