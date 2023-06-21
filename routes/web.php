@@ -20,12 +20,10 @@ Route::get('/', function () {
 });
 
 Route::get('posts/{post}', function ($slug) {
-
     return view('post', [
-        'post'=> Post::find($slug)
+        'post'=> Post::findOrFail($slug)
     ]);
-
-})->Where('post', '[A-z_\-]+');
+});
 
 // Route::get('/example', function () {
 //     return [['id'=>' 0 ','name' =>'ashley'],['id'=>' 1','name' =>'michelle']]; 
