@@ -1,0 +1,10 @@
+[< Volver al índice](/docs/readme.md)
+
+# Route Wildcard Constraints
+La siguiente linea nos asegura que al ingresar nuestra URL puede estar en mayúscula, miniscule, o cualquier caracter. 
+```php
+
+Route::get('posts/{post}', function ($slug) {
+    
+})->Where('post', '[A-z_\-]+');
+``` 

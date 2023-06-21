@@ -1,0 +1,4 @@
+[< Volver al índice](/docs/readme.md)
+
+#  Environment Files and Database Connections
+Cada aplicación requerirá una cierta cantidad de configuración específica del entorno. Ejemplos de esto pueden ser el nombre de la base de datos a la que se está conectando, o qué host de correo y puerto usa su aplicación, o incluso claves especiales y tokens secretos que le proporcionan las API de terceros. Puede almacenar una configuración como esta dentro de su archivo .env, que se encuentra en la raíz de su proyecto. En este episodio, analizaremos los aspectos esenciales de los archivos de entorno y luego pasaremos a la conexión a una base de datos MySQL (usando TablePlus).
