@@ -31,7 +31,7 @@
 - [22. 3 Ways to Mitigate Mass Assignment Vulnerabilities](./Working%20with%20Databases/3-Ways-to-Mitigate-Mass-Assignment-Vulnerabilities.md) 
 - [23. Route Model Binding](./Working%20with%20Databases/Route-Model-Binding.md)
 - [24. Your First Eloquent Relationship](./Working%20with%20Databases/Your-First-Eloquent-Relationship.md)
-
+- [25. Show All Posts Associated with a Category](./Working%20with%20Databases/Show-All-Posts-Associated-With-a-Category.md)
 
 
 ## Módulo 5 - Integrate the Design
