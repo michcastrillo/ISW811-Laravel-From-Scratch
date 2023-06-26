@@ -16,44 +16,47 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        User::truncate();
-        Post::truncate();
-        Category::truncate();
-        //\App\Models\User::factory(10)->create();
 
-        $user = User::factory()->create();
+        Post::factory(2)->create();
 
-        $personal = Category::create([
-            'name' => 'Personal',
-            'slug' => 'personal',
-        ]);
+        // User::truncate();
+        // Post::truncate();
+        // Category::truncate();
+        // //\App\Models\User::factory(10)->create();
 
-        $family = Category::create([
-            'name' => 'Family',
-            'slug' => 'family',
-        ]);
+        // $user = User::factory()->create();
 
-        $work = Category::create([
-            'name' => 'Work',
-            'slug' => 'work',
-        ]);
+        // $personal = Category::create([
+        //     'name' => 'Personal',
+        //     'slug' => 'personal',
+        // ]);
 
-        Post::create([
-            'user_id' => $user->id,
-            'category_id' => $family->id,
-            'title' => 'My Family Post',
-            'slug' => 'my-family-post',
-            'excerpt' => 'Lorem ipsum dolor sit amet',
-            'body' => '<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde alias animi distinctio vel officiis maiores, sed officia sint incidunt, porro eos veniam accusantium aspernatur eius excepturi neque impedit numquam nemo!</p>',
-        ]);
+        // $family = Category::create([
+        //     'name' => 'Family',
+        //     'slug' => 'family',
+        // ]);
 
-        Post::create([
-            'user_id' => $user->id,
-            'category_id' => $work->id,
-            'title' => 'My Work Post',
-            'slug' => 'my-work-post',
-            'excerpt' => 'Lorem ipsum dolor sit amet',
-            'body' => '<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde alias animi distinctio vel officiis maiores, sed officia sint incidunt, porro eos veniam accusantium aspernatur eius excepturi neque impedit numquam nemo!</p>',
-        ]);
+        // $work = Category::create([
+        //     'name' => 'Work',
+        //     'slug' => 'work',
+        // ]);
+
+        // Post::create([
+        //     'user_id' => $user->id,
+        //     'category_id' => $family->id,
+        //     'title' => 'My Family Post',
+        //     'slug' => 'my-family-post',
+        //     'excerpt' => 'Lorem ipsum dolor sit amet',
+        //     'body' => '<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde alias animi distinctio vel officiis maiores, sed officia sint incidunt, porro eos veniam accusantium aspernatur eius excepturi neque impedit numquam nemo!</p>',
+        // ]);
+
+        // Post::create([
+        //     'user_id' => $user->id,
+        //     'category_id' => $work->id,
+        //     'title' => 'My Work Post',
+        //     'slug' => 'my-work-post',
+        //     'excerpt' => 'Lorem ipsum dolor sit amet',
+        //     'body' => '<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde alias animi distinctio vel officiis maiores, sed officia sint incidunt, porro eos veniam accusantium aspernatur eius excepturi neque impedit numquam nemo!</p>',
+        // ]);
     }
 }
