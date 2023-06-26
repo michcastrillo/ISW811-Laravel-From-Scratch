@@ -27,6 +27,8 @@
 - [18. Migrations: The Absolute Basics](./Working%20with%20Databases//Migrations-The-Absolute-Basics.md) 
 - [19. Eloquent and the Active Record Pattern](./Working%20with%20Databases/Eloquent-and-the-Active-Record-Pattern.md) 
 - [20. Make a Post Model and Migration](./Working%20with%20Databases/Make-a-Post-Model-and-Migration.md) 
+- [21. Eloquent Updates and HTML Escaping](./Working%20with%20Databases/Eloquent-Updates-and-HTML-Escaping.md) 
+
 
 
 
