@@ -32,6 +32,7 @@
 - [23. Route Model Binding](./Working%20with%20Databases/Route-Model-Binding.md)
 - [24. Your First Eloquent Relationship](./Working%20with%20Databases/Your-First-Eloquent-Relationship.md)
 - [25. Show All Posts Associated with a Category](./Working%20with%20Databases/Show-All-Posts-Associated-With-a-Category.md)
+- [26. Clockwork, and the N+1 Problem](./Working%20with%20Databases/Clock%2C-and-the-N%2B1-Problem.md)
 
 
 ## Módulo 5 - Integrate the Design
