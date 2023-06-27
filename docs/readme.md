@@ -44,3 +44,6 @@
 - [31. Convert the HTML and CSS to Blade](./Integrate%20the%20Design/Convert-the-HTML-and-CSS-to-Blade.md)
 - [32. Blade Components and CSS Grids](./Integrate%20the%20Design/Blade-Components-and-CSS-Grids.md)
 - [33. Convert the Blog Post Page](./Integrate%20the%20Design/Convert-the-Blog-Post-Page.md)
+- [34. A Small JavaScript Dropdown Detour](./Integrate%20the%20Design/A-Small-JavaScript-Dropdown-Detour.md)
+- [35. ](./Integrate%20the%20Design)
+- [36. ](./Integrate%20the%20Design)
