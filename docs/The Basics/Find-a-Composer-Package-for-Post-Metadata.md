@@ -37,7 +37,7 @@ class Post {
     }
 }
 ```
-Agregamos dos funciones más al modelo, donde se extrae la información de cada post para retornarlo a la vista, la ultima función buscar que el slug coincida con el parámetro 
+Agregamos dos funciones más al modelo, donde se extrae la información de cada post para retornarlo a la vista, la ultima función buscar que el slug coincida con el parámetro.
 ```php
     public static function all()
     {
@@ -97,6 +97,6 @@ Route::get('posts/{post}', function ($slug) {
 
 })->Where('post', '[A-z_\-]+');
 ```
-Y así obtenemos una página dinámica
+Y así obtenemos una página dinámica: 
 ![image](./images/posts%20dinamicos%20ep12.png "posts")
 ![image](./images/post%20dinamico%20ep12.png "post")

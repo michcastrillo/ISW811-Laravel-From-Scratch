@@ -49,7 +49,7 @@ Route::get('posts/{post}', function ($id) {
 ```
 También cambiar su vista en el directorio *resources/views/posts.blade.php*.
 ```bash
-<a href="/posts/{{$post->id; }}">
+<a href="/posts/{{$post->id; }}">{{ $post->title; }}</a>
 ```
 
 ![image](./images/my%20first%20post%20web%20ep20.png "Web posts")

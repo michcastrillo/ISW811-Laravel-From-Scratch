@@ -14,19 +14,20 @@ Ingresamos las credenciales de nuestro usuario, en este caso utilizamos *bcrypt(
 
 En la base de datos se puede apreciar de la siguiente manera lo nuevos datos ingresados. 
 
-![image](./images/base%20de%20datos%20ep19.png"TablesPlus")
-Los siguientes comandos son usados para: 
+![image](./images/base%20de%20datos%20ep19.png "TablesPlus")
+
+- Los siguientes comandos son usados para: 
 
     - Encontrar un usuario por su id: 
         ```bash
         User::find();
         user[0];
         ```
-    -Devuelve el valor de la llave que se le solicita:
+    - Devuelve el valor de la llave que se le solicita:
         ```bash
             $user->pluck('name')
         ```
-    -Para ver todos los datos de la base de datos *User*:
+    - Para ver todos los datos de la base de datos *User*:
         ```bash
         User::all();
         ```

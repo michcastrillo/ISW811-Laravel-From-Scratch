@@ -8,6 +8,7 @@ En Laravel, las migraciones son una forma de administrar y aplicar cambios al es
 - **php artisan migrate:fresh** NO se utiliza si la tabla esta en producción borrará su base de datos antes de migrar.
 
 Después de haber migrado se crean unos archivos en el directorio *database/migrations*.
+\
 ![image](./images/migration%20file.png "Migration file")
 \
 Uno de los archivos que se crean *create_users_table* el cual contiene código para crear usuarios.

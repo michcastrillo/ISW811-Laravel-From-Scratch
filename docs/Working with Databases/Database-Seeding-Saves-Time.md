@@ -64,7 +64,7 @@ use App\Models\User;
         ]);
     }
 ```
-Para que los usuarios se relacionen con cada post utilizaremos belongsTO() en *app/models/post.php*.
+Para que los usuarios se relacionen con cada post utilizaremos belongsTo() en *app/models/post.php*.
 ```php   
 public function user()
 {

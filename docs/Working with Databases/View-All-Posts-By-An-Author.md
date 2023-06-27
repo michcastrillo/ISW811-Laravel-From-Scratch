@@ -22,7 +22,7 @@ Ahora que podemos asociar una publicación de blog con un autor, el siguiente pa
         ]);
     });
 ```
-En *database/migration/create_users_table.php* agregamos la columna de username para el usuario, y hacemos que esta sea unica para que no se pueda repetir ya que haremos parte la url. 
+En *database/migration/create_users_table.php* agregamos la columna de username para el usuario, y hacemos que esta sea unica para que no se pueda repetir ya que haremos parte la URL. 
 ```php
     $table->string('username')->unique();
 ```

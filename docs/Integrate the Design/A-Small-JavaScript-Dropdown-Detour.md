@@ -50,7 +50,7 @@ Debemos cambiar la sección "category" en *resources/views/_post-header.blade.ph
         </div>
 ```
 
-Luego cambiamos las rutas para que al dirigirnos a una categoría solo aparezcan los posts pertenecientes a ella. 
+Luego cambiamos las rutas para que al dirigirnos a una categoría solo aparezcan los posts pertenecientes a ella en *routes/web.php*.
 
 ```php
 Route::get('/', function () {
@@ -75,4 +75,4 @@ Route::get('authors/{author:username}', function (User $author) {
     ]);
 });
 ```
-![image](./images/Dropdown%20ep34.png "Dropdown)
+![image](./images/Dropdown%20ep34.png "Dropdown")

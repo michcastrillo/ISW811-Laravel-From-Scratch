@@ -22,32 +22,33 @@ Ya que debemos asociar cada post a una categoría debemos agregar una nueva colu
 ```
 Para que los cambios se realicen correctamente debemos 'refrescar' nuestra base de datos, esto incluye también que se borren sus datos, por esto vamos agregar una nueva categoría y post. 
 ```bash
-php artisan migrate:fresh
-$ php artisan tinker;
-use App\Models\Category;
-$c = new Category;
-$c->name = 'Personal';
-$c->slug = 'personal';
-$c->save();
+    php artisan migrate:fresh
+    $ php artisan tinker;
+    use App\Models\Category;
+    $c = new Category;
+    $c->name = 'Personal';
+    $c->slug = 'personal';
+    $c->save();
 ```
 Antes de agregar un nuevo post debemos recordar que en *app/models/post.php* tenemos un *$fillable* el cual solo permite que se ingresen las key que contenga, y la función categoría permite acceder a la categoría asociada a un post utilizando la sintaxis $post->category. 
 
 ```php
-protected $fillable = ['category_id','slug','title', 'excerpt', 'body'];
-public function category()
-{
-    return $this->belongsTo(Category::class);
-}
+    protected $fillable = ['category_id','slug','title', 'excerpt', 'body'];
+    public function category()
+    {
+        return $this->belongsTo(Category::class);
+    }
 ```
 Ahora, ya hechas las configuraciones se puede agregar un nuevo post. 
 
 ```bash
-Post::create(['category_id' => 1,'slug' => 'my-family-post','title' => 'My Family Post', 'excerpt' => 'Excerpt for my post', 'body' => 'Lorem ipsum dolar sit amet.']);
+    Post::create(['category_id' => 1,'slug' => 'my-family-post','title' => 'My Family Post', 'excerpt' => 'Excerpt for my post', 'body' => 'Lorem ipsum dolar sit amet.']);
 ```
 Para que se muestre en la vista la relación post->categoria debemos agregar lo siguiente a *resources/views/post.blade.php*.
 
-<p>
-    <a href="#">{{$post->category->name}}</a>
-</p>
-
+```html
+    <p>
+        <a href="#">{{$post->category->name}}</a>
+    </p>
+```
 ![image](./images/post%20with%20category%20ep24.png "Post with category")
