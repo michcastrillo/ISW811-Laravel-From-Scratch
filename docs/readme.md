@@ -46,4 +46,4 @@
 - [33. Convert the Blog Post Page](./Integrate%20the%20Design/Convert-the-Blog-Post-Page.md)
 - [34. A Small JavaScript Dropdown Detour](./Integrate%20the%20Design/A-Small-JavaScript-Dropdown-Detour.md)
 - [35. How to Extract a Dropdown Blade Component](./Integrate%20the%20Design/How-to-Extract-a-Dropdown-Blade-Component.md)
-- [36. ](./Integrate%20the%20Design)
+- [36. Quick Tweaks and Clean-Up](./Integrate%20the%20Design/Quick-Tweaks-and-Clean-Up.md)
