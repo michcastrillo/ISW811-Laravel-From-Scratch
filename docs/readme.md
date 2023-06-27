@@ -41,3 +41,4 @@
 
 
 ## Módulo 5 - Integrate the Design
+- [31. Convert the HTML and CSS to Blade](./Integrate%20the%20Design/Convert-the-HTML-and-CSS-to-Blade.md)
