@@ -1,3 +1,10 @@
+[< Volver al índice](/docs/readme.md)
+
+# Convert the Blog Post Page
+
+A continuación, ahora haremos la página de un post individual en el directorio: *resources/views/post.blade.php*.
+
+```php
 <x-layout>
     <!DOCTYPE html>
     <section class="px-6 py-8">
@@ -71,3 +78,17 @@
         </main>
     </section>
 </x-layout>
+```
+Creamos una vista llamada *category-button.blade.php* en *resources/views* y agregamos el siguiente código,el cual genera un enlace estilizado que muestra el nombre de una categoría específica y dirige al usuario a la página que muestra todas las publicaciones relacionadas con esa categoría.
+
+```php
+@props(['category'])
+<a
+    href="/categories/{{$category->slug }}"
+    class="px-3 py-1 border border-blue-300 rounded-full text-blue-300 text-xs uppercase font-semibold"
+    style="font-size: 10px"
+    >{{ $category->name }}</a
+>
+```
+
+![image](./images/post%20section%20ep33.png "Post section")
