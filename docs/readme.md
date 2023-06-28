@@ -52,3 +52,4 @@
 
 ## Módulo 6 - Search
 - [37. Search (The Messy Way)](./Search/Search-(The-Messy-Way).md)
+- [38. Search (The Cleaner Way)](./Search/Search-(The%20Cleaner-Way).md)
