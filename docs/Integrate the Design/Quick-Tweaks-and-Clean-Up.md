@@ -99,7 +99,7 @@ Estamos a punto de pasar a la función de búsqueda, pero antes se harán unos c
             </div>
         </header>
     ```
-2. **dropdown.blade.php**: En el menú desplegable solo se se mostrarán un máximo de 52 elementos en el directorio *resources/views/components*
+2. **dropdown.blade.php**: En el menú desplegable solo se se mostrarán un máximo de 52 elementos en el directorio *resources/views/components*.
     ```php
         @props(['trigger'])
         <div x-data="{ show: false }" @click.away="show = false">

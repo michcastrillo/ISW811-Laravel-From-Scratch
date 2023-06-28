@@ -1,7 +1,7 @@
 [< Volver al índice](/docs/readme.md)
 
 # How a Route Loads a View
-A continuación se muestra como se manejan las rutas asociadas a una URL en Laravel, en nuestro caso se manejan en el directorio *routes/web.php*
+A continuación se muestra como se manejan las rutas asociadas a una URL en Laravel, en nuestro caso se manejan en el directorio *routes/web.php*.
 
  ```php
    Route::get('/', function () {

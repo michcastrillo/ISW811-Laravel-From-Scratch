@@ -26,7 +26,7 @@ En *database/migration/create_users_table.php* agregamos la columna de username 
 ```php
     $table->string('username')->unique();
 ```
-Así como también agregamos los cambios de la nueva columna de username, a la fabrica. En el directorio *database/factories/UserFactory.php*
+Así como también agregamos los cambios de la nueva columna de username, a la fabrica. En el directorio *database/factories/UserFactory.php*.
 ```php
     'username'=> $this->faker->unique()->userName(),
 ```

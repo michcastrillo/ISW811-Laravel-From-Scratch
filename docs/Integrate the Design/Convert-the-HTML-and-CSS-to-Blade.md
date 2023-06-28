@@ -7,9 +7,7 @@ En este nuevo módulo crearemos el diseño real del blog. Debemos descargar el p
 1. Debemos copiar la carpeta de *images* y pasarlo a la carpeta *public* de nuestro proyecto. 
 \
 ![image](./images/images%20on%20public%20file.png "images on public file")
-
 \
-
 2. En base al index.html del proyecto de Github vamos a editar el código de *resources/views/components/layout.blade.php* y solo dejaremos el *nav* y el *footer* para agregar el slot en medio de estos. 
     ```html
         <!doctype html>
@@ -338,4 +336,5 @@ En este nuevo módulo crearemos el diseño real del blog. Debemos descargar el p
             </main>
         </x-layout>
     ```
+
 ![image](./images/laravel%20web%20ep31.png "Laravel web")

@@ -8,7 +8,8 @@ Para eso tenemos que ingresar el siguiente comando en nuestra maquina virtual pa
 ```bash
 php artisan make:factory PostFactory
 ``` 
-Eso generará un archivo en el directorio *database/factories* en el cual vamos a ingresar exportar los modelos y luego retornar.....
+Eso generará un archivo en el directorio *database/factories* en el cual vamos a ingresar exportar los modelos y luego crear una función que pueda crear la estructura del Post. 
+
 ```php
 use App\Models\Category;
 use App\Models\User;

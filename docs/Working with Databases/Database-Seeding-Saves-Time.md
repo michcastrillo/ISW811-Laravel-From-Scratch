@@ -18,7 +18,7 @@ use App\Models\Category;
 use App\Models\Post;
 use App\Models\User;
 ```
-- El método truncate() de cada modelo, se utiliza para eliminar los registros de la tablas con respecto a su modelo.
+- El método *truncate()* de cada modelo, se utiliza para eliminar los registros de la tablas con respecto a su modelo.
 - *User::factory()->create()* se utiliza a crear un usuario con datos aleatorios. 
 
 ```php   

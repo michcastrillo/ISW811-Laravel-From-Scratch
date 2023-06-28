@@ -4,7 +4,7 @@
 
 Ahora hemos creado con éxito la funcionalidad básica para un menú desplegable, pero aún no es reutilizable. Para remediar esto, extraeremos un componente Blade x-dropdown. Esto tendrá el efecto secundario de aislar todo el código específico de Alpine en ese único archivo de componente.
 
-Nuestra sección categoría en la vista del directorio *resources/views/_post-header.blade.php*
+Nuestra sección categoría en la vista del directorio *resources/views/_post-header.blade.php*.
 ```html
     <!--  Category -->
     <div class="relative lg:inline-flex bg-gray-100 rounded-xl">

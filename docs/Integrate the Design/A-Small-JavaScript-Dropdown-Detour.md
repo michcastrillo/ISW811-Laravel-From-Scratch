@@ -2,7 +2,7 @@
 
 # A Small JavaScript Dropdown Detour
 
-A continuación, se hará un menú desplegable "Categorías" en la página de inicio con JavaScript. Primero, demos importar la librería Alpine para darle estilo a nuestra pagina para esto vamos a pegar el siguiente *script* en *resources/views/components/layout.blade.php*
+A continuación, se hará un menú desplegable "Categorías" en la página de inicio con JavaScript. Primero, demos importar la librería Alpine para darle estilo a nuestra pagina para esto vamos a pegar el siguiente *script* en *resources/views/components/layout.blade.php*.
 
 ```html
 <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>

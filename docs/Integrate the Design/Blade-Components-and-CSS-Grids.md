@@ -4,7 +4,7 @@
 
 A continuación, se ingresarán grids al diseño de la pagina. Pero primero vamos a agregar todas las configuraciones que ya habíamos hecho sobre post, por tanto solo van a salir datos de nuestra base de datos. 
 
-- Directorio: *resources/views/components/post-card.blade.php*
+- Directorio: *resources/views/components/post-card.blade.php*.
 
 ```html
     @props(['post'])
@@ -77,7 +77,7 @@ A continuación, se ingresarán grids al diseño de la pagina. Pero primero vamo
         </div>
     </article>
 ```
-- Directorio: *resources/views/components/post-featured.blade.php*
+- Directorio: *resources/views/components/post-featured.blade.php*.
 
 ```html
     @props(['post'])
