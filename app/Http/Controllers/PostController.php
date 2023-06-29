@@ -8,12 +8,13 @@ use App\Models\Post;
 
 class PostController extends Controller
 {
-    public function index(){
+    public function index()
+    {
         return view('posts', [
-            'posts' => Post::latest()->filter(request(['search']))->get(),
-            'categories' => Category::all()
+            'posts' => Post::latest()->filter(request(['search', 'category']))->get(),
+            'categories' => Category::all(),
+            'currentCategory' => Category::firstWhere('slug', request('category'))
         ]);
-    
     }
 
     public function show(Post $post)
