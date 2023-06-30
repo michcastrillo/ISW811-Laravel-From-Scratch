@@ -22,10 +22,10 @@ Route::get('posts/{post:slug}', [PostController::class, 'show']);
 
 Route::get('authors/{author:username}', function (User $author) {
     return view('posts', [
-        'posts'=> $author->posts,
-        'categories' => Category::all()
+        'posts'=> $author->posts
     ]);
 });
+
 
 // Route::get('/example', function () {
 //     return [['id'=>' 0 ','name' =>'ashley'],['id'=>' 1','name' =>'michelle']]; 

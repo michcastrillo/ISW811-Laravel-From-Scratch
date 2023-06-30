@@ -58,3 +58,4 @@
 
 ## Módulo 7 - Filtering
 - [39. Advanced Eloquent Query Constraints](./Filtering/Advanced-Eloquent-Query-Constraints.md)
+- [40. Extract a Category Dropdown Blade Component](./Filtering/Extract-a-Category-Dropdown-Blade-Component.md)
