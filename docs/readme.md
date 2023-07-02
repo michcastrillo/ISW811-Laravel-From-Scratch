@@ -61,3 +61,4 @@
 - [40. Extract a Category Dropdown Blade Component](./Filtering/Extract-a-Category-Dropdown-Blade-Component.md)
 - [41. Author Filtering](./Filtering/Author-Filtering.md)
 - [42. Merge Category and Search Queries](./Filtering/Merge-Category-and-Search-Queries.md)
+- [43. Fix a Confusing Eloquent Query Bug](./Filtering/Fix-a-Confusing-Eloquent-Query-Bug.md)
