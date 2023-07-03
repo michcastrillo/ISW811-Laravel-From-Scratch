@@ -62,3 +62,8 @@
 - [41. Author Filtering](./Filtering/Author-Filtering.md)
 - [42. Merge Category and Search Queries](./Filtering/Merge-Category-and-Search-Queries.md)
 - [43. Fix a Confusing Eloquent Query Bug](./Filtering/Fix-a-Confusing-Eloquent-Query-Bug.md)
+
+
+
+## Módulo 8 - Pagination
+- [44. Laughably Simple Pagination](./Pagination/Laughably-Simple-Pagination.md)
