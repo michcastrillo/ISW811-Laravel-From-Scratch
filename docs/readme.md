@@ -72,3 +72,4 @@
 
 ## Módulo 9 - Forms and Authentication
 - [45. Build a Register User Page](./Forms%20and%20Authentication/Build-a-Register-User-Page.md)
+- [46. Automatic Password Hashing With Mutators](./Forms%20and%20Authentication/Automatic-Password-Hashing-With-Mutators.md)
