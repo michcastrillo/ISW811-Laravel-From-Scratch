@@ -67,3 +67,8 @@
 
 ## Módulo 8 - Pagination
 - [44. Laughably Simple Pagination](./Pagination/Laughably-Simple-Pagination.md)
+
+
+
+## Módulo 9 - Forms and Authentication
+- [45. Build a Register User Page](./Forms%20and%20Authentication/Build-a-Register-User-Page.md)
