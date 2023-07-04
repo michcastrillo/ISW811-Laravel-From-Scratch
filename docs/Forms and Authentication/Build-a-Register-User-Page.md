@@ -2,7 +2,7 @@
 
 # Build a Register User Page
 
-En este capitulo se vera el manejo de formularios y la autenticación de usuarios en un registro. Lo primero que haremos es crear un controlador para que retorne la vista de nuestro formulario y cree el usuario, para esto vamos a digitar el siguiente comando en nuestra maquina virtual: 
+En este capitulo se verá el manejo de formularios y la autenticación de usuarios en un registro. Lo primero que haremos es crear un controlador para que retorne la vista de nuestro formulario y cree el usuario, para esto vamos a digitar el siguiente comando en nuestra maquina virtual: 
 
 ```bash
     php artisan make:controller RegisterController

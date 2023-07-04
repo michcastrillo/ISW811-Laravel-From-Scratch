@@ -4,7 +4,7 @@
 
 Vamos a utilizar la paginación para no mostrar todos los posts en una sola pagina, ya que si lo dejamos de esta manera podría provocar un problema en el rendimiento de la página a medida que vayan incremento los post.  
 
-Lo primero que debemos cambiar es en el controlador donde la función *index* solo mostrará 6 post por página en `app/Http/Controller/PostController`.
+Lo primero que debemos cambiar es en el controlador donde la función *index* solo mostrará 6 post por página en `app/Http/Controllers/PostController`.
 
 ```php
     public function index()
@@ -17,7 +17,7 @@ Lo primero que debemos cambiar es en el controlador donde la función *index* so
     }
 ```
 
-Para que se muestre la paginación  o el numero de paginas que tenemos en la interfaz debemos de cambiar el siguiente código en la vista `resources/views/posts/index.blade.php`.
+Para que se muestre la paginación o el número de paginas que tenemos en la interfaz debemos de cambiar el siguiente código en la vista `resources/views/posts/index.blade.php`.
 
 ```php
     @if ($posts->count())

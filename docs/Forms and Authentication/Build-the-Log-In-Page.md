@@ -37,7 +37,7 @@ En el controlador `app/Controllers/SessionsController.php` retornamos la vista d
 ```
 Por ultimo, creamos un nuevo directorio para la vista del login llamado *create.blade.php* en el directorio `resources/views/sessions`, donde ponemos unos inputs para que el usuario puede colocar su correo electrónico y su contraseña: 
 
-```php
+```html
     <x-layout>
         <section class="px-6 py-8">
             <main class="max-w-lg mx-auto mt-10 bg-gray-100 border border-gray-200 p-6 rounded-xl">

@@ -4,7 +4,7 @@
 
 A continuación, debemos proporcionar comentarios al usuario cada vez que falle el verificador de validación. En estos casos, podemos utilizar *@error* Blade para representar fácilmente el mensaje de validación correspondiente de un atributo. También discutiremos cómo obtener datos de entrada antiguos. Para esto vamos a cambiar la vista de nuestro registro en `resources/views/register/create.blade.php`.
 
-```php
+```html
     <x-layout>
         <section class="px-6 py-8">
             <main class="max-w-lg mx-auto mt-10 bg-gray-100 border border-gray-200 p-6 rounded-xl">
@@ -67,7 +67,7 @@ A continuación, debemos proporcionar comentarios al usuario cada vez que falle 
         </section>
     </x-layout>
 ```
-*@error* nos permite crear un mensaje de error cuando no se cumplen las condiciones en el controlador del registro y es relacionado al nombre del input y *{{ old('texto') }}* nos permite obtener los datos que se tenían antes del mensaje de error, haciendo que el valor del input quede a como estaba antes que se recargará la pagina. Como bien se sabe las condiciones se colocan en el controlador en `app/Http/Controllers/RegisterController.php` donde creamos nuestro usuario, tenemos condiciones como que cada campo es obligatorio, un mínimo o máximo de caracteres, y otras como en username y email que pedimos que su contenido sea único o mejor dicho, no se encuentre en nuestra base de datos. 
+*@error* nos permite crear un mensaje de error cuando no se cumplen las condiciones en el controlador del registro y es relacionado al nombre del input y *{{ old('texto') }}* nos permite obtener los datos que se tenían antes del mensaje de error, haciendo que el valor del input quede a como estaba antes que se recargará la pagina. Como bien se sabe las condiciones se colocan en el controlador en `app/Http/Controllers/RegisterController.php` donde creamos nuestro usuario, tenemos condiciones como que cada campo es obligatorio, un mínimo o máximo de caracteres, y otras como en username y email que pedimos que su contenido sea único o mejor dicho, no se encuentre en nuestra base de datos, para esto le indicamos el nombre de la tabla (*users*) y la columna. 
 
 ```php
     public function store()

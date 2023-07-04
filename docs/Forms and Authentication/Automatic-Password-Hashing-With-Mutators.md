@@ -10,7 +10,6 @@ En el episodio anterior las contraseñas se podían visualizar en la base de dat
         $this->attributes['password'] = bcrypt($password);
     }
 ```
-El método setPasswordAttribute es utilizado como mutador que se encarga de editar la contraseña para encriptarla.  
+El método *setPasswordAttribute* es utilizado como mutador que se encarga de editar la contraseña para encriptarla.  
 
-![image](./images/ep46-1.png "Interfaz de registro")
-![image](./images/ep46-2.png "Contraseña encriptada")
+![image](./images/ep46.png "Contraseña encriptada")

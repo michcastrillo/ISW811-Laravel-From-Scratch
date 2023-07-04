@@ -2,7 +2,7 @@
 
 # Show a Success Flash Message
 
-Todavía no estamos proporcionando al usuario ningún comentario después de que se registre en nuestro sitio. Para esto vamos a crear un mensaje flash en el controlador en nuestra función *store* redireccionamos la pagina y ademas mandamos el mensaje de éxito en `app/Http/Controllers/RegisterController.php`. 
+Todavía no estamos proporcionando ningún comentario después de que el usuario se registre a nuestro sitio web. Para esto vamos a crear un mensaje flash en el controlador en nuestra función *store* redireccionamos la pagina y ademas mandamos el mensaje de éxito en `app/Http/Controllers/RegisterController.php`. 
 
 ```php
     return redirect('/')->with('success', 'Your account has been created.');
@@ -22,7 +22,7 @@ Luego crearemos un componente llamado *flash.blade.php* en `resources/views/comp
     @endif
 ```
 
-Este componente lo llamamos al fin del código de `resources/views/components/layout.blade.php` 
+Este componente lo llamamos al fin del código de `resources/views/components/layout.blade.php`.
 
 ```php
     <x-flash />

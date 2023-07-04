@@ -2,7 +2,7 @@
 
 # Merge Category and Search Queries
 
-Vamos a actualizar el código del menú de de categorías y el input de búsqueda para que al buscar una categoría no se elimine la búsqueda que ya habíamos hecho y viceversa. Para esto vamos a cambiar el código `resources/views/posts/_header.blade.php` en la sección search verificamos si tenemos una solicitud del menu desplegable se oculta el método. 
+Vamos a actualizar el código del menú de categorías y el input de búsqueda para que al buscar una categoría no se elimine la búsqueda que ya habíamos hecho y viceversa. Para esto vamos a cambiar el código `resources/views/posts/_header.blade.php` en la sección search verificamos si tenemos una solicitud del menú desplegable se oculta el método. 
 
 ```html
     <!-- Search -->
@@ -28,7 +28,7 @@ Vamos a actualizar el código del menú de de categorías y el input de búsqued
     </div>
 ```
 
-Luego en `resources/views/components/category-dropdown.blade.php` en nuestro menú desplegable. Se utiliza http_build_query() para construir una cadena de consulta con respecto a los parámetros de la solicitudes actuales, con excepción de 'category' y 'page'.
+Luego en `resources/views/components/category-dropdown.blade.php` en nuestro menú desplegable. Se utiliza *http_build_query()* para construir una cadena de consulta con respecto a los parámetros de la solicitudes actuales, con excepción de 'category' y 'page'.
 
 ```php
     @foreach ($categories as $category)

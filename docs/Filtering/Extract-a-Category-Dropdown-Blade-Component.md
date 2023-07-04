@@ -10,7 +10,7 @@ Vamos a renderizar el código de la aplicación para esto vamos crear un compone
 
 Esto creará un archivo `category-dropdown.blade.php` en `resources/views/components`, en el cual vamos a pasar el código del menú desplegable, y queda de la siguiente manera: 
 
-```php
+```html
     <x-dropdown>
         <x-slot name="trigger">
             <button

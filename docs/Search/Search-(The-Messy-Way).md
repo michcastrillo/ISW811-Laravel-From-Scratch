@@ -4,7 +4,7 @@
 
 En esta nueva sección, implementaremos la funcionalidad del input de búsqueda para nuestro página web. 
 
-El código de este input tiene un método get por tanto podemos mandarle lo que usuario ingresa por medio de la URL. Para esto debemos cambiar nuestra ruta en *routes.web.php* en el cual verificamos si hay una solicitud por medio de este input verificamos lo digitado con los títulos o el body de nuestros posts, si coinciden se retornan solo los que contengan la palabra. 
+El código de este input tiene un método *get* por tanto podemos mandarle lo que usuario ingresa por medio de la URL. Para esto debemos cambiar nuestra ruta en *routes.web.php* en el cual verificamos si hay una solicitud por medio de este input verificamos lo digitado con los títulos o el body de nuestros posts, si coinciden se retornan solo los que contengan la palabra. 
 
 ```php
     Route::get('/', function () {

@@ -2,7 +2,7 @@
 
 # Advanced Eloquent Query Constraints
 
-Continuemos con las consultas *filter()*. Es ta vez filtraremos los posts por su categoría y a su vez utilizando el filtro del input de búsqueda. 
+Continuemos con las consultas *filter()*. Esta vez filtraremos los posts por su categoría y a su vez utilizando el filtro del input de búsqueda. 
 
 Primero, solicitamos que nos devuelven los posts donde el slug de la categoría coincida con lo que usuario solicite en *app/Models/Post.php*, además, de filtrar los post por su título y categoría.
 
@@ -46,7 +46,7 @@ En la sección de categoría en *_post-header.blade.php* cambiamos el foreach qu
         </x-dropdown-item>
     @endforeach
 ```
-Esto era nuestro menú desplegable, lo que en su ruta va a cambiar porque ahora se van a aceptar nuevos parámetros. Por tanto, ya no vamos a necesitar la siguiente ruta en *routes/web.php *
+Esto era nuestro menú desplegable, lo que en su ruta va a cambiar porque ahora se van a aceptar nuevos parámetros. Por tanto, ya no vamos a necesitar la siguiente ruta en *routes/web.php*
 
 ```php
 Route::get('categories/{category:slug}', function (Category $category) {
