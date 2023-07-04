@@ -77,3 +77,6 @@
 - [48. Show a Success Flash Message](./Forms%20and%20Authentication/Show-a-Success-Flash-Message.md)
 - [49. Login and Logout](./Forms%20and%20Authentication/Login-and-Logout.md)
 - [50. Build the Log In Page](./Forms%20and%20Authentication/Build-the-Log-In-Page.md)
+- [51. Laravel Breeze Quick Peek](./Forms%20and%20Authentication/Laravel-Breeze-Quick-Peek.md)
+
+
