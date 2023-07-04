@@ -76,3 +76,4 @@
 - [47. Failed Validation and Old Input Data](./Forms%20and%20Authentication/Failed-Validation-and-Old-Input-Data.md)
 - [48. Show a Success Flash Message](./Forms%20and%20Authentication/Show-a-Success-Flash-Message.md)
 - [49. Login and Logout](./Forms%20and%20Authentication/Login-and-Logout.md)
+- [50. Build the Log In Page](./Forms%20and%20Authentication/Build-the-Log-In-Page.md)
