@@ -80,3 +80,6 @@
 - [51. Laravel Breeze Quick Peek](./Forms%20and%20Authentication/Laravel-Breeze-Quick-Peek.md)
 
 
+
+## Módulo 10 - Comments
+- [52. Write the Markup for a Post Comment](./Comments/Write-the-Markup-for-a-Post-Comment.md)
