@@ -22,7 +22,23 @@ Route::post('login', [SessionsController::class, 'store'])->middleware('guest');
 
 Route::post('logout', [SessionsController::class, 'destroy'])->middleware('auth');
 
+Route::get('ping', function() {
+	$mailchimp = new \MailchimpMarketing\ApiClient();
 
+	$mailchimp->setConfig([
+		'apiKey' => config('services.mailchimp.key'),
+		'server' => 'us12'
+	]);
+
+	    $response = $mailchimp->lists->addListMember('6f0c5f1e34', [
+            'email_address'=> "Ebony_Brekke@gmail.com",
+            'status'=>"subscribed"
+        ]);
+
+        ddd($response);
+
+
+});
 
 
 
