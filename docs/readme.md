@@ -95,3 +95,4 @@
 - [58. Mailchimp API Tinkering](./Newsletters%20and%20APIs/Mailchimp-API-Tinkering.md)
 - [59. Make the Newsletter Form Work](./Newsletters%20and%20APIs/Make-the-Newsletter-Form-Work.md)
 - [60. Extract a Newsletter Service](./Newsletters%20and%20APIs/Extract-a-Newsletter-Service.md)
+- [61. Toy Chests and Contracts](./Newsletters%20and%20APIs/Toy-Chests-and-Contracts.md)
