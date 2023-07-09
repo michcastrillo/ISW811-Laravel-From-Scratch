@@ -94,3 +94,4 @@
 ## Módulo 11 - Newsletters and APIs
 - [58. Mailchimp API Tinkering](./Newsletters%20and%20APIs/Mailchimp-API-Tinkering.md)
 - [59. Make the Newsletter Form Work](./Newsletters%20and%20APIs/Make-the-Newsletter-Form-Work.md)
+- [60. Extract a Newsletter Service](./Newsletters%20and%20APIs/Extract-a-Newsletter-Service.md)
