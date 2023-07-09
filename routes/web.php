@@ -22,7 +22,9 @@ Route::post('login', [SessionsController::class, 'store'])->middleware('guest');
 
 Route::post('logout', [SessionsController::class, 'destroy'])->middleware('auth');
 
-Route::get('ping', function() {
+Route::post('newsletter', function() {
+	request()->validate(['email'=>'required|email']);
+
 	$mailchimp = new \MailchimpMarketing\ApiClient();
 
 	$mailchimp->setConfig([
@@ -30,12 +32,20 @@ Route::get('ping', function() {
 		'server' => 'us12'
 	]);
 
-	    $response = $mailchimp->lists->addListMember('6f0c5f1e34', [
-            'email_address'=> "Ebony_Brekke@gmail.com",
+	try{
+		$response = $mailchimp->lists->addListMember('6f0c5f1e34', [
+            'email_address'=> request('email'),
             'status'=>"subscribed"
         ]);
+	}catch(\Exception $e){
+		throw \Illuminate\Validation\ValidationException::withMessages([
+			'email'=>'This email could not be added to our newsletter list'
+		]);
+	}
+	    
 
-        ddd($response);
+    return redirect('/')
+		->with('success', 'You are now signed up for our newsletter');
 
 
 });
