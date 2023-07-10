@@ -103,3 +103,4 @@
 - [62. Limit Access to Only Admins](./Admin%20Section/Limit-Access-to-Only-Admins.md)
 - [63. Create the Publish Post Form](./Admin%20Section/Create-the-Publish-Post-Form.md)
 - [64. Validate and Store Post Thumbnails](./Admin%20Section/Validate-and-Store-Post-Thumbnails.md)
+- [65. Extract Form-Specific Blade Components](./Admin%20Section/Extract-Form-Specific-Blade-Components.md)
