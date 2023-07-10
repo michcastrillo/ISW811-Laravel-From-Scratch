@@ -6,6 +6,9 @@ use Illuminate\Http\Request;
 use App\Models\Category;
 use App\Models\Post;
 
+use Illuminate\Validation\Rule;
+
+
 class PostController extends Controller
 {
     public function index()
@@ -23,4 +26,9 @@ class PostController extends Controller
             'post' => $post
         ]);
     }
+    public function create()
+    {
+        return view('posts.create');
+    }
+
 }
