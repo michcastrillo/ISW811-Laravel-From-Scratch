@@ -111,6 +111,6 @@
 
 
 
-<!-- ## Módulo 13 - Conclusion
-- [70. ](.) -->
+## Módulo 13 - Conclusion
+- [70. Goodbye and Next Steps](./Conclusion/Goodbye-and-Next-Steps.md)
 
