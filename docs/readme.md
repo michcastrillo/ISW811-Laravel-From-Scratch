@@ -106,3 +106,5 @@
 - [65. Extract Form-Specific Blade Components](./Admin%20Section/Extract-Form-Specific-Blade-Components.md)
 - [66. Extend the Admin Layout](./Admin%20Section/Extend-the-Admin-Layout.md)
 - [67. Create a Form to Edit and Delete Posts](./Admin%20Section/Create-a-Form-to-Edit-and-Delete-Posts.md)
+- [68. Group and Store Validation Logic](./Admin%20Section/Group-and-Store-Validation-Logic.md)
+<!-- - [69. ](./Admin%20Section) -->

@@ -1,24 +1,11 @@
-<?php
+[< Volver al índice](/docs/readme.md)
 
-namespace App\Http\Controllers;
+# Group and Store Validation Logic
 
-use App\Models\Post;
-use Illuminate\Validation\Rule;
+En `app/Http/Controllers/AdminPostController.php` hay una lógica de validación duplicada, la extraeremos y la convertiremos en un método reutilizable. 
 
-class AdminPostController extends Controller
-{
-    public function index()
-    {
-        return view('admin.posts.index', [
-            'posts' => Post::paginate(50)
-        ]);
-    }
-
-    public function create()
-    {
-        return view('admin.posts.create');
-    }
-
+La función para crear los posts quedaría de esta manera en la cual enlazamos los usuarios e imágenes con el post. 
+```php
     public function store()
     {
         Post::create(array_merge($this->validatePost(), [
@@ -28,12 +15,11 @@ class AdminPostController extends Controller
 
         return redirect('/');
     }
+```
 
-    public function edit(Post $post)
-    {
-        return view('admin.posts.edit', ['post' => $post]);
-    }
+La función para actualizar verificaremos si el usuario ingresa una imagen, y actualizamos. 
 
+```php
     public function update(Post $post)
     {
         $attributes = $this->validatePost($post);
@@ -47,13 +33,11 @@ class AdminPostController extends Controller
         return back()->with('success', 'Post Updated!');
     }
 
-    public function destroy(Post $post)
-    {
-        $post->delete();
+```
 
-        return back()->with('success', 'Post Deleted!');
-    }
+*ValidatePost()* será nuestro método reutilizable para verificar los datos ingresados por el usuario. 
 
+```php
     protected function validatePost(?Post $post = null): array
     {
         $post ??= new Post();
@@ -67,4 +51,5 @@ class AdminPostController extends Controller
             'category_id' => ['required', Rule::exists('categories', 'id')]
         ]);
     }
-}
+```
+
