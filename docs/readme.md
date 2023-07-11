@@ -104,3 +104,4 @@
 - [63. Create the Publish Post Form](./Admin%20Section/Create-the-Publish-Post-Form.md)
 - [64. Validate and Store Post Thumbnails](./Admin%20Section/Validate-and-Store-Post-Thumbnails.md)
 - [65. Extract Form-Specific Blade Components](./Admin%20Section/Extract-Form-Specific-Blade-Components.md)
+- [66. Extend the Admin Layout](./Admin%20Section/Extend-the-Admin-Layout.md)
